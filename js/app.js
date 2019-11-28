@@ -18,7 +18,7 @@ function toggleBadgeLight() {
 
 function ScrollTo(target){
 	let elem = document.getElementById(target);
-	let targetPos =  (elem.offsetTop - elem.scrollTop + elem.clientTop) - 120;
+	let targetPos =  (elem.offsetTop - elem.scrollTop + elem.clientTop) - 80;
 	$('html, body').stop().animate({
 			scrollTop: targetPos
 	}, BASETIME, 'swing');

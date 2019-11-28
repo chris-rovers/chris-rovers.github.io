@@ -26,7 +26,7 @@ body {
 	justify-self: center;
 	justify-content: center;
 	align-items: center;
-	background: url('/assets/images/keyboard_6000x3786.jpg');
+	background: url('../assets/images/keyboard_2000x1262.png');
 	background-size: 120%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -53,8 +53,8 @@ body {
 	font-weight: 600;
 	color: #000;
 	text-decoration: none;
-	/* justify-content: space-evenly;
-	justify-content: space-around; for EDGE */
+	/* justify-content: space-between; */
+	/* justify-content: space-around; /* for EDGE */
 }
 #topBtn {
 	display: none;
@@ -63,7 +63,7 @@ body {
 	right: 10px;
 	width: 40px;
 	height: 40px;
-	background: url('/assets/images/up_arrow.jpg');
+	background: url('../assets/images/up_arrow.jpg');
 	background-size: cover;
 	border: 1px solid #000;
 	border-bottom: 0px;
@@ -71,4 +71,41 @@ body {
 	border-top-right-radius: 8px;
 	text-align: center;
 	cursor: pointer;
+}
+/* /////////////////////////////////// */
+/* ////////// MEDIA QUERIES ////////// */
+
+/* Extra large devices (large desktops, up to 1200px) */
+/* ////////// RESULTS ////////// */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large devices (desktops, up to 992px) */ 
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Medium devices (tablets, up to 768px) */
+@media (max-width: 767px) {
+	.nav {
+		background: red;
+	}
+}
+
+/* Small devices (landscape phones, up to 576px) */
+@media (max-width: 575px) {
+
+}
+
+.bg-warning {       
+	@include media-breakpoint-up(sm) { 
+			background:#fff;
+	}
+	@include media-breakpoint-up(md) { 
+			background:#f6f6f6;
+	}
+	@include media-breakpoint-up(lg) { 
+			background:#fafafa;
+	}
 }
