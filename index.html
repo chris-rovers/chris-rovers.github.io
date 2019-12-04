@@ -16,26 +16,32 @@
 		</div>
 	</div>
 	<!-- ////////// NAV ////////// -->
-	<ul class="nav flex-column flex-md-row justify-content-end sticky-top bg-white border mb-4 navLinks">
-		<li class="nav-item flex-sm-fill">
-			<a class="nav-link text-dark" href="#" onclick="ScrollTo('sites');">WEBSITES</a>
-		</li>
-		<li class="nav-item flex-sm-fill">
-			<a class="nav-link text-dark" href="#" onclick="ScrollTo('graphics');">GRAPHICS</a>
-		</li>
-		<li class="nav-item flex-sm-fill">
-			<a class="nav-link text-dark" href="#" onclick="ScrollTo('techs');">TECHNOLOGIES</a>
-		</li>
-		<li class="nav-item flex-sm-fill">
-			<a class="nav-link text-dark" href="#" onclick="ScrollTo('feedback');">FEEDBACK</a>
-		</li>
-	</ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top mb-4">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navLinks">
+						<a class="nav-link" href="#" onclick="ScrollTo('sites');">WEBSITES</a>
+					</li>
+					<li class="nav-item navLinks">
+						<a class="nav-link" href="#" onclick="ScrollTo('graphics');">GRAPHICS</a>
+					</li>
+					<li class="nav-item navLinks">
+						<a class="nav-link" href="#" onclick="ScrollTo('techs');">TECHNOLOGIES</a>
+					</li>
+					<li class="nav-item navLinks">
+						<a class="nav-link" href="#" onclick="ScrollTo('feedback');">FEEDBACK</a>
+					</li>
+				</ul>
+			</div>
+	</nav>
 	<!-- ////////// SITES ////////// -->
 	<div id="sites" class="container mb-4">
 		<div class="h1 border-bottom">Websites</div>
 		<div class="card-body">
-			<h5 class="card-title">Cancer Bats</h5>
-			<p class="card-text">A website about the band Cancer Bats.</p>
+			<p class="card-text">My website work.</p>
 		</div>
 		<div id="carouselCaptions" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -43,19 +49,48 @@
 				<li data-target="#carouselCaptions" data-slide-to="1"></li>
 				<li data-target="#carouselCaptions" data-slide-to="2"></li>
 				<li data-target="#carouselCaptions" data-slide-to="3"></li>
+				<li data-target="#carouselCaptions" data-slide-to="4"></li>
+				<li data-target="#carouselCaptions" data-slide-to="5"></li>
+				<li data-target="#carouselCaptions" data-slide-to="6"></li>
+				<li data-target="#carouselCaptions" data-slide-to="7"></li>
 			</ol>
 			<div class="carousel-inner carousel('pause')">
 				<div class="carousel-item active">
-					<img src="assets/images/sites/cbHome-960x487.png" class="d-block w-100 img-responsive" alt="Cancer Bats Home">
+					<img src="assets/images/sites/cb_Home.gif" class="d-block w-100 img-responsive" alt="Cancer Bats Home" data-toggle="modal" data-target="#siteModal">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Cancer Bats</h5>
+						<p>This is a website I made about the band Cancer Bats.</p>
+					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="assets/images/sites/cbBand-960x487.png" class="d-block w-100 img-responsive" alt="Cancer Bats Band">
+					<img src="assets/images/sites/cb_Band.gif" class="d-block w-100 img-responsive" alt="Cancer Bats Band">
+					<div class="carousel-caption d-none d-md-block">
+						<p>This was my first web project and uses only HTML, CSS and JavaScript.</p>
+					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="assets/images/sites/cbMusic-960x487.png" class="d-block w-100 img-responsive" alt="Cancer Bats Music">
+					<img src="assets/images/sites/cb_Music.gif" class="d-block w-100 img-responsive" alt="Cancer Bats Music">
+					<div class="carousel-caption d-none d-md-block">
+						<p></p>
+					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="assets/images/sites/cbStore-960x487.png" class="d-block w-100 img-responsive" alt="Cancer Bats Store">
+					<img src="assets/images/sites/cb_Store.gif" class="d-block w-100 img-responsive" alt="Cancer Bats Store">
+					<div class="carousel-caption d-none d-md-block">
+						<p>I included functionality that mimicked adding items to a cart and displaying a total.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/sites/ss_Home_1920x974.png" class="d-block w-100 img-responsive" alt="Show Sherpa Home">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/sites/ss_Show_1920x974.png" class="d-block w-100 img-responsive" alt="Show Sherpa Show">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/sites/ss_Season_1920x974.png" class="d-block w-100 img-responsive" alt="Show Sherpa Season">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/sites/ss_Episode_1920x974.png" class="d-block w-100 img-responsive" alt="Show Sherpa Episode">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
@@ -98,45 +133,75 @@
 			</div>
 		</div>
 	</div>
-	<!-- ////////// TECHS  //////////-->
+	<!-- ////////// TECHS ////////// -->
 	<div id="techs" class="container">
 		<div class="h1 border-bottom">Technologies</div>
 		<div class="row">
 			<!-- HTML -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="html" class="img-fluid" src="assets/images/techs/html_Logo.png" alt="HTML5">
+				<img id="html" class="img-fluid" src="assets/images/techs/html_logo.png" alt="HTML5">
 			</div>
 			<!-- CSS -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="css" class="img-fluid" src="assets/images/techs/css_Logo.png" alt="CSS3">
+				<img id="css" class="img-fluid" src="assets/images/techs/css_logo.png" alt="CSS3">
 			</div>
 			<!-- JS -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="js" class="img-fluid" src="assets/images/techs/js_Logo.png" alt="JavaScript">
+				<img id="js" class="img-fluid" src="assets/images/techs/js_logo.png" alt="JavaScript">
 			</div>
 			<!-- SQL -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="sql" class="img-fluid" src="assets/images/techs/sql_Logo.png" alt="Micrsoft SQL">
+				<img id="sql" class="img-fluid" src="assets/images/techs/sql_logo.png" alt="Micrsoft SQL">
 			</div>
 			<!-- C# -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="csharp" class="img-fluid" src="assets/images/techs/csharp_Logo.png" alt="C#">
+				<img id="csharp" class="img-fluid" src="assets/images/techs/csharp_logo.png" alt="C#">
 			</div>
 			<!-- LINUX -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="linux" class="img-fluid" src="assets/images/techs/linux_Logo.png" alt="Linux">
+				<img id="linux" class="img-fluid" src="assets/images/techs/linux_logo.png" alt="Linux">
 			</div>
 			<!-- JAVA -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="java" class="img-fluid" src="assets/images/techs/java_Logo.png" alt="Java">
+				<img id="java" class="img-fluid" src="assets/images/techs/java_logo.png" alt="Java">
 			</div>
 			<!-- PYTHON -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="python" class="img-fluid" src="assets/images/techs/python_Logo.png" alt="Python">
+				<img id="python" class="img-fluid" src="assets/images/techs/python_logo.png" alt="Python">
+			</div>
+			<!-- PHP -->
+			<div class="col-md-2 my-md-3 py-3">
+				<img id="php" class="img-fluid" src="assets/images/techs/php_logo.png" alt="PHP">
+			</div>
+			<!-- MySQL -->
+			<div class="col-md-2 my-md-3 py-3">
+				<img id="mysql" class="img-fluid" src="assets/images/techs/mysql_logo.png" alt="MySQL">
+			</div>
+			<!-- ANGULAR -->
+			<div class="col-md-2 my-md-3 py-3">
+				<img id="angular" class="img-fluid" src="assets/images/techs/angular_logo.png" alt="Angular">
 			</div>
 			<!-- PHOTOSHOP -->
 			<div class="col-md-2 my-md-3 py-3">
-				<img id="photoshop" class="img-fluid" src="assets/images/techs/photoshop_Logo.png" alt="Adobe Photoshop">
+				<img id="photoshop" class="img-fluid" src="assets/images/techs/photoshop_logo.png" alt="Adobe Photoshop">
+			</div>
+		</div>
+	</div>
+	<!-- ////////// Modal ////////// -->
+	<div id="siteModal" class="modal fade" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" >Cancer Bats Website</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="modal-image d-block w-100 img-responsive" src="" alt="">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 	</div>
