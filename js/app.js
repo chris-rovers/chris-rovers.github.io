@@ -26,7 +26,7 @@ function ScrollTo(target){
 
 function ToggleTopButton() {
 	let scroll = document.scrollingElement.scrollTop;
-	if (scroll < 800)
+	if (scroll < 1100)
 	{
 		topBtn.style.display = "none";
 	}
