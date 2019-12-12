@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta keyword="web developer, web development, app, html5, css, javascript">
 	<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 	<link href="css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap" rel="stylesheet">
@@ -23,6 +23,9 @@
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item navLinks">
+						<a class="nav-link" href="#" onclick="ScrollTo('about');">ABOUT ME</a>
+					</li>
+					<li class="nav-item navLinks">
 						<a class="nav-link" href="#" onclick="ScrollTo('sites');">WEBSITES</a>
 					</li>
 					<li class="nav-item navLinks">
@@ -31,12 +34,25 @@
 					<li class="nav-item navLinks">
 						<a class="nav-link" href="#" onclick="ScrollTo('techs');">TECHNOLOGIES</a>
 					</li>
-					<li class="nav-item navLinks">
+					<!-- <li class="nav-item navLinks">
 						<a class="nav-link" href="#" onclick="ScrollTo('feedback');">FEEDBACK</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 	</nav>
+	<!-- ////////// ABOUT ME ////////// -->
+	<div id="about" class="container mb-4">
+		<div class="h1 border-bottom">ABOUT ME</div>
+		<div class="card-body">
+			<p class="card-text lead p-3">
+				Hello, there! My name is Chris Rovers and welcome to my portfolio. I am a student of the <a class="alert-link" 
+				href="https://www.trios.com/career/?Section=EnterpriseWebMobileDeveloper" target="_blank">Enterprise Web and Mobile Developer</a> 
+				program at triOS College. During my time in the program I have gained knowledge and experience with various web 
+				and software technologies, as listed <a class="alert-link" href="#" onclick="ScrollTo('techs');">below</a>.
+				Please take a look at my work. I hope you like it!
+			</p>
+		</div>
+	</div>
 	<!-- ////////// SITES ////////// -->
 	<div id="sites" class="container mb-4">
 		<div class="h1 border-bottom">WEBSITES</div>
@@ -312,7 +328,14 @@
 			</div>
 		</div>
 	</div>
+	
 	<footer>
+			<div class="LI-profile-badge" style="background-color: #303336; border: none; -webkit-box-shadow: none; box-shadow: none;"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="chris-rovers-27500337"><a class="LI-simple-link" href='https://ca.linkedin.com/in/chris-rovers-27500337?trk=profile-badge'>Chris Rovers</a></div>
+		<div class="container">
+			<div class="row justify-content-center text-light">
+				<h4>&copy;2019 CHRIS ROVERS</h4>
+			</div>			
+		</div>
 		<div id="topBtn" onclick="ScrollTo('badge');">
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -320,5 +343,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/app.js"></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
