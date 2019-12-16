@@ -20,6 +20,19 @@ body {
   background: rgba(12, 0, 47, 0.5);
   border-radius: 2px;
 }
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .banner {
 	height: 300px;
 	display: flex;
@@ -40,19 +53,67 @@ body {
 		border-radius: 4px;
 		color: #fff;
 	}
-	.lightOn {
-		background: rgba(255, 255, 100, 1);
-		box-shadow: 0px 0px 100px 5px rgba(255, 255, 100, 0.75);
-	}
-	.lightOff {
-		background: rgba(255, 255, 255, 0.8);
-		box-shadow: none;
-	}
 .navLinks {
 	font-size: 1.8em;
 	font-weight: 600;
 	color: #000;
 	text-decoration: none;
+}
+.social {
+	display: flex;
+	height: 59px;
+	align-items: center;
+	/* position: absolute;
+	right: 0; */
+}
+.socialIcons {
+	width: 40px;
+	height: 40px;
+}
+.slides {
+	
+}
+.about {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(0,212,255,0.4) 0%, rgba(255,255,255,0.6) 100%);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+}
+.websites {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,68,0,0.4) 0%, rgba(255,255,255,1) 100%);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+}
+.software {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,255,8,0.4) 0%, rgba(255,255,255,1) 100%);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+}
+.graphics {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(171,0,255,0.4) 0%, rgba(255,255,255,1) 100%);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+}
+.technologies {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,205,0,0.4) 0%, rgba(255,255,255,1) 100%);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+}
+.qualifications {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(6,7,230,0.4) 0%, rgba(255,255,255,1) 100%);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
 }
 #topBtn {
 	display: none;
@@ -70,6 +131,7 @@ body {
 	text-align: center;
 	cursor: pointer;
 	border-radius: 50%;
+	box-shadow: 0 0 0 1px #fff;
 }
 footer {
 	background: #303336;

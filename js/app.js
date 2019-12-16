@@ -1,30 +1,29 @@
 const BASETIME = 420;
 
-let badge = document.getElementById('badge');
 let topBtn = document.getElementById('topBtn'); // the "Back to Top" button
 
-function toggleBadgeLight() {
-	let status = badge.getAttribute('class');
-	console.log(status);
-	if(status == "lightOff")
-	{
-		badge.setAttribute('class', 'lightOn');
-	}
-	else
-	{
-		badge.setAttribute('class', 'lightOff');
-	}
-} // toggleBadgeLight()
+function toggleLinkUnderline(elem, id) {
+	let linkClass = id;
+	elem.classList.toggle(linkClass);
+} // toggleLinkUnderline()
 
-function ScrollTo(target){
+function scrollToSection(target){
 	let elem = document.getElementById(target);
-	let targetPos =  (elem.offsetTop - elem.scrollTop + elem.clientTop) - 80;
+	let diff;
+	if(window.innerWidth > 992) { // desktop
+		diff = 120;
+	}
+	else { // mobile
+		diff = 470;
+	}
+
+	let targetPos =  (elem.offsetTop - elem.scrollTop + elem.clientTop) - diff;
 	$('html, body').stop().animate({
 			scrollTop: targetPos
 	}, BASETIME, 'swing');
-} // ScrollTo()
+} // scrollTo()
 
-function ToggleTopButton() {
+function toggleTopButton() {
 	let scroll = document.scrollingElement.scrollTop;
 	if (scroll < 1100)
 	{
@@ -34,6 +33,6 @@ function ToggleTopButton() {
 	{
 		topBtn.style.display = "block";
   }
-} // ToggleTopButton()
+} // toggleTopButton()
 
-window.onscroll = function() {ToggleTopButton()};
+window.onscroll = function() {toggleTopButton()};
