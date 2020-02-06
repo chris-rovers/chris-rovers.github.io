@@ -1,4 +1,4 @@
-const BASETIME = 420;
+const BASETIME = 900;
 
 let topBtn = document.getElementById('topBtn'); // the "Back to Top" button
 
