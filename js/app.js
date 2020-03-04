@@ -21,7 +21,7 @@ function scrollToSection(target){
 	$('html, body').stop().animate({
 			scrollTop: targetPos
 	}, BASETIME, 'swing');
-} // scrollTo()
+} // scrollToSection()
 
 function toggleTopButton() {
 	let scroll = document.scrollingElement.scrollTop;
@@ -36,3 +36,8 @@ function toggleTopButton() {
 } // toggleTopButton()
 
 window.onscroll = function() {toggleTopButton()};
+
+// carousel modal functionality
+$(document).on("click", ".carouselImage", function () {
+	$(".modal-body .modalImage").attr("src", $(this).attr('src'));
+})
