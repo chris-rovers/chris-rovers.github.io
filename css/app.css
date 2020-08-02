@@ -34,7 +34,7 @@ body {
 	height: 100%;
 }
 .siteCarousel {
-	box-shadow: 5px 5px 13px -3px rgba(0,0,0,0.5);
+	/* box-shadow: 5px 5px 13px -3px rgba(0,0,0,0.5); */
 }
 .carouselControlBtn:hover {
 	background-color: rgba(0,0,0,0.3);
@@ -76,6 +76,9 @@ body {
 .socialIcons {
 	width: 40px;
 	height: 40px;
+}
+.slyFoxLinks:hover {
+	text-decoration: none;
 }
 .about {
 	background: rgb(255,255,255);
@@ -154,9 +157,7 @@ footer {
 
 /* Medium devices (tablets, up to 768px) */
 @media (max-width: 767px) {
-	.nav {
-		background: red;
-	}
+
 }
 
 /* Small devices (landscape phones, up to 576px) */
