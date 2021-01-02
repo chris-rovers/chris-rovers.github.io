@@ -35,7 +35,12 @@ function toggleTopButton() {
   }
 } // toggleTopButton()
 
+function setCopyDate() {
+	copyDate.innerHTML = "&copy; " + new Date().getFullYear() + " CHRIS ROVERS";
+} // setCopyDate()
+
 window.onscroll = function() {toggleTopButton()};
+window.onload = setCopyDate();
 
 // carousel modal functionality
 $(document).on("click", ".carouselImage", function () {
