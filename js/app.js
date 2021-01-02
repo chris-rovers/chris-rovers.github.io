@@ -1,6 +1,7 @@
 const BASETIME = 900;
 
 let topBtn = document.getElementById('topBtn'); // the "Back to Top" button
+let copyDate = document.getElementById('copyDate'); // footer copyright year
 
 function toggleLinkUnderline(elem, id) {
 	let linkClass = id;
