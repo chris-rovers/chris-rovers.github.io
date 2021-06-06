@@ -67,6 +67,7 @@ body {
 	font-weight: 600;
 	color: #000;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 .social {
 	display: flex;
@@ -79,6 +80,9 @@ body {
 }
 .slyFoxLinks:hover {
 	text-decoration: none;
+}
+.sectionHeading {
+	text-transform: uppercase;
 }
 .about {
 	background: rgb(255,255,255);
