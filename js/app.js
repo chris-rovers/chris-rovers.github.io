@@ -1,10 +1,10 @@
 const BASETIME = 900;
 
-let topBtn = document.getElementById('topBtn'); // the "Back to Top" button
-let copyDate = document.getElementById('copyDate'); // footer copyright year
+const topBtn = document.getElementById('topBtn'); // the "Back to Top" button
+const copyDate = document.getElementById('copyDate'); // footer copyright year
 
-function toggleLinkUnderline(elem, id) {
-	let linkClass = id;
+function toggleLinkUnderline(elem) {
+	let linkClass = elem.text.toLowerCase();
 	elem.classList.toggle(linkClass);
 } // toggleLinkUnderline()
 
@@ -37,7 +37,7 @@ function toggleTopButton() {
 } // toggleTopButton()
 
 function setCopyDate() {
-	copyDate.innerHTML = "&copy; " + new Date().getFullYear() + " CHRIS ROVERS";
+	copyDate.innerHTML = "&copy; " + new Date().getFullYear() + " Chris Rovers";
 } // setCopyDate()
 
 window.onscroll = function() {toggleTopButton()};
