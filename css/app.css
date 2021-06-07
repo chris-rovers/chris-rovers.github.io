@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
 	width: 100%;
 	margin: 0;
@@ -65,9 +70,17 @@ body {
 .navLinks {
 	font-size: 1.8em;
 	font-weight: 600;
-	color: #000;
-	text-decoration: none;
 	text-transform: uppercase;
+}
+.navLinks a {
+	background-size: 0 2px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+
+}
+.navLinks a:hover {
+	transition: background-size .2s ease-in-out;
+	background-size: 100% 2px;
 }
 .social {
 	display: flex;
@@ -83,48 +96,47 @@ body {
 }
 .sectionHeading {
 	text-transform: uppercase;
+	width: max-content;
 }
 .about {
-	background: rgb(255,255,255);
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(0,212,255,0.4) 0%, rgba(255,255,255,0.6) 100%);
-	background-size: 100% 1px;
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0.4) 0%, rgba(255,255,255,0.6) 100%);
+	background-size: 0 2px;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 }
 .websites {
-	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,68,0,0.4) 0%, rgba(255,255,255,1) 100%);
-	background-size: 100% 1px;
+	background-size: 0 2px;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 }
 .software {
-	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,255,8,0.4) 0%, rgba(255,255,255,1) 100%);
-	background-size: 100% 1px;
+	background-size: 0 2px;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 }
 .graphics {
-	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(171,0,255,0.4) 0%, rgba(255,255,255,1) 100%);
-	background-size: 100% 1px;
+	background-size: 0 2px;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 }
 .technologies {
-	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,205,0,0.4) 0%, rgba(255,255,255,1) 100%);
-	background-size: 100% 1px;
+	background-size: 0 2px;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 }
 .qualifications {
-	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(6,7,230,0.4) 0%, rgba(255,255,255,1) 100%);
-	background-size: 100% 1px;
+	background-size: 0 2px;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
+}
+.sectionHeading:hover {
+		transition: background-size .4s ease-in-out;
+		background-size: 100% 2px;
 }
 #topBtn {
 	display: none;
